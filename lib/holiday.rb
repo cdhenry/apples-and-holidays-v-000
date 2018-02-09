@@ -73,6 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
         else
           print "#{item}, "
         end
+      binding.pry
       end
     end
   end
