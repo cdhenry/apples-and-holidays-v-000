@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season}".capitalize + ":"
     holidays.each do |day, supplies|
       binding.pry
-      print "  #{day}".capitalize + ": "
+      puts "  #{day}".capitalize + ": ".chomp
       supplies.each do |item|
         if item == supplies[-1]
           puts "#{item}"
