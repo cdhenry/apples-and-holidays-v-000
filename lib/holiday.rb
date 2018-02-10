@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
         if item == supplies[-1]
           puts "#{item}"
         else
-          puts "#{item}, "
+          print "#{item}, "
         end
       end
     end
