@@ -72,8 +72,10 @@ def all_supplies_in_holidays(holiday_hash)
         cap_phrase = phrase.collect {|word| "#{word}".capitalize}
         binding.pry
         holiday = cap_phrase.join(" ")
+        puts "  " + "#{holiday}".capitalize + ": #{supplies.join(", ")}"
+      else
+        puts "  " + "#{holiday}".capitalize + ": #{supplies.join(", ")}"
       end
-      puts "  " + "#{holiday}".capitalize + ": #{supplies.join(", ")}"
     end
   end
 end
