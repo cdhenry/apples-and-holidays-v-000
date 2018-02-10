@@ -66,7 +66,6 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holidays|
     puts "#{season}".capitalize + ":"
     holidays.each do |day, supplies|
-      binding.pry
       puts "  #{day}".capitalize + ": ".chomp
       supplies.each do |item|
         if item == supplies[-1]
